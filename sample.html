@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Masonry Plugin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="pink">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">  
+<div class="cards">
+        <div class="card">
+            <div class="card-image">
+
+  <a href="https://en.wikipedia.org/wiki/ABC_News">
+<div class="column">
+    <img  onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\abcnews.jpg"  alt="Smiley" style="width:100%">
+<div class="card-info">
+            ABC News is the news division of the American Broadcasting Company (ABC).
+            </div>
+  </div>
+<script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script></a>
+</div>
+            
+        </div>
+<div class="card">
+            <div class="card-image">
+<a href="https://en.wikipedia.org/wiki/ABC_News_(Australia)">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\abc-news.jpg" alt="Snow" style="width:100%">
+<p>For the broadcast channels from the Australian Broadcasting Corporation....</p>
+  </div></a>
+<script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script>
+</div>
+            <div class="card-info">
+<a href="https://en.wikipedia.org/wiki/Aftenposten">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\Aftenposten.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+<p>Aftenposten (Urban East Norwegian: Norwegian for "The Evening Post") is Norway's largest printed newspaper by circulation</p>
+  </div></A>
+<script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script>
+</div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+<a href="https://en.wikipedia.org/wiki/Al_Jazeera">
+
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\touch-icon-iphone-retina.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+<p>This article is about the television network and channel....</p>
+  </div></a>
+<script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script>
+</div>
+</div>
+            
+  </div>
+        </div>
+<div class="row">
+<div class="card-info">
+
+        <div class="card">
+            <div class="card-image">
+<a href="https://en.wikipedia.org/wiki/Agenzia_Nazionale_Stampa_Associata">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\ansa-144-precomposed.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+<p>The Agenzia Nazionale Stampa Associatad is the leading wire service in Italy...</p>
+</a>
+
+  </div>
+<script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script>
+        </div>
+<div class="card-info">
+
+        <div class="card">
+            <div class="card-image">
+<a href="https://en.wikipedia.org/wiki/Argaam">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\apple-touch-icon-precomposed.png" alt="Snow" style="width:100%" onclick="myFunction(this);">
+<p>Argaam Arabian financial news portal and considered as the primary source to media and publicfor financial news...</p></a>
+
+  </div>
+<script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script>
+</div>
+</div>
+<div class="card-info">
+
+        <div class="card">
+            <div class="card-image">
+<a href="https://en.wikipedia.org/wiki/Ars_Technica">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\apple-touch-icon.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+<p>Ars Technica was privately owned until May 2008, when it was sold to Condé Nast Digital, the online division of Condé Nast Publications.</p></a>
+  </div><script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script></div></div>
+<div class="card-info">
+
+        <div class="card">
+            <div class="card-image">
+<a href="https://en.wikipedia.org/wiki/ARY_News">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="C:\\Users\\bharvath\\Downloads\\apple-icon-144x144.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+<p>ARY News is a Pakistani news channel launched on 26 September 2004....</p></a>
+  </div><script>
+function bigImg(x) {
+  x.style.height = "264px";
+  x.style.width = "264px";
+}
+
+function normalImg(x) {
+  x.style.height = "232px";
+  x.style.width = "232px";
+}
+</script></div></div>
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <div id="imgtext"></div>
+
+
+    <script src="pinterestgrid.js"></script>
+    <script type="text/javascript">
+        (function() {
+            'use strict';
+
+            var grid = new PinterestGrid({
+                container: '.cards',
+                item: '.card',
+                gutter: 10,
+                delay: 200
+            });
+
+            window.addEventListener('resize', function() {
+                grid.init();
+            });
+
+            Array.from(document.querySelectorAll('.card img')).forEach(function(item) {
+                item.addEventListener('load', function() {
+                    grid.init();
+                    item.removeEventListener('load');
+                }, false);
+            });
+
+        }());
+    </script>
+</body>
+
+</html>
